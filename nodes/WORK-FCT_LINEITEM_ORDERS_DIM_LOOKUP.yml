@@ -470,6 +470,38 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e00cd9fb-91ae-4e16-9175-af3a90144aaf
+              stepCounter: bd18f872-75e5-49ce-ab07-2df67b513a16
+            dataType: NUMBER(38,0)
+            description: ""
+            name: PS_AVAILQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9a920929-0a81-4cc2-84b4-15150ce91518
+                    stepCounter: 86ffdba8-c2a3-4824-9fd4-72cd4607e06a
+                transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b520d92e-c954-41cf-98bb-6ff8b6e87cfc
+              stepCounter: bd18f872-75e5-49ce-ab07-2df67b513a16
+            dataType: NUMBER(12,2)
+            description: ""
+            name: PS_SUPPLYCOST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 56475b0a-7f3c-4e40-a392-56c03a32834c
+                    stepCounter: 86ffdba8-c2a3-4824-9fd4-72cd4607e06a
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
