@@ -1,63 +1,65 @@
-steps:
-  REGION-d5b8d2f1-4d3e-4423-9b47-94c4626c7168:
-    operation:
-      database: ""
-      dataset: ""
-      deployEnabled: true
-      description: Region data as defined by TPC-H
-      locationName: SRC
-      metadata:
-        columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: db867f5d-4520-4daa-a80a-ee7ffa60e2d8
-              stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: R_REGIONKEY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 67b6f861-aea4-4341-bcac-2e075e1facaa
-              stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
-            config: {}
-            dataType: VARCHAR(25)
-            defaultValue: ""
-            description: ""
-            name: R_NAME
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 6823174a-090a-4445-8dca-abeeec486a24
-              stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
-            config: {}
-            dataType: VARCHAR(152)
-            defaultValue: ""
-            description: ""
-            name: R_COMMENT
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-        join:
-          joinCondition: FROM {{ ref('SRC', 'REGION') }}
-      name: REGION
-      schema: ""
-      sqlType: Source
-      table: REGION
-      type: sourceInput
-    stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
+fileVersion: 1
+id: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
+name: REGION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: Region data as defined by TPC-H
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db867f5d-4520-4daa-a80a-ee7ffa60e2d8
+          stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67b6f861-aea4-4341-bcac-2e075e1facaa
+          stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: R_NAME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6823174a-090a-4445-8dca-abeeec486a24
+          stepCounter: d5b8d2f1-4d3e-4423-9b47-94c4626c7168
+        config: {}
+        dataType: VARCHAR(152)
+        defaultValue: ""
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'REGION') }}
+  name: REGION
+  schema: ""
+  sqlType: Source
+  table: REGION
+  type: sourceInput
+  version: 1
+type: Node
