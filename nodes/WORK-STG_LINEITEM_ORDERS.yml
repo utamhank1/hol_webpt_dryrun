@@ -19,17 +19,32 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7a10acdd-9b20-4921-b3e9-b3e5cd85aa26
+          columnCounter: e6803d5b-dfb0-4792-94cd-ed52fda08fac
           stepCounter: 6bc332c1-f47a-45f8-b2d9-56d9d9ebe58f
         config: {}
         dataType: NUMBER(38,0)
         description: ""
         hashDetails: null
-        name: L_ORDERKEY
+        name: O_CUSTKEY
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b1a8b7c1-77cf-4a9f-9e5a-b13ac6006aeb
+              - columnCounter: 7832384c-1b0a-41bc-94ec-5925c6ed0713
+                stepCounter: b4bde5de-b08d-4ade-b116-4b521433dfdd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec9a95f5-6b11-4f9d-b032-73d7b24b9bb5
+          stepCounter: 6bc332c1-f47a-45f8-b2d9-56d9d9ebe58f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        hashDetails: null
+        name: L_SUPPKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d22685a-c311-4817-ae17-db9531401c46
                 stepCounter: f1666993-be0a-4fdb-9ff1-7d9e53310c9b
             transform: ""
       - appliedColumnTests: {}
@@ -49,17 +64,17 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ec9a95f5-6b11-4f9d-b032-73d7b24b9bb5
+          columnCounter: 7a10acdd-9b20-4921-b3e9-b3e5cd85aa26
           stepCounter: 6bc332c1-f47a-45f8-b2d9-56d9d9ebe58f
         config: {}
         dataType: NUMBER(38,0)
         description: ""
         hashDetails: null
-        name: L_SUPPKEY
+        name: L_ORDERKEY
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 0d22685a-c311-4817-ae17-db9531401c46
+              - columnCounter: b1a8b7c1-77cf-4a9f-9e5a-b13ac6006aeb
                 stepCounter: f1666993-be0a-4fdb-9ff1-7d9e53310c9b
             transform: ""
       - appliedColumnTests: {}
@@ -270,21 +285,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 1bf8d8e6-d800-463e-aad7-3edefd42b2b6
-                stepCounter: b4bde5de-b08d-4ade-b116-4b521433dfdd
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: e6803d5b-dfb0-4792-94cd-ed52fda08fac
-          stepCounter: 6bc332c1-f47a-45f8-b2d9-56d9d9ebe58f
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        hashDetails: null
-        name: O_CUSTKEY
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 7832384c-1b0a-41bc-94ec-5925c6ed0713
                 stepCounter: b4bde5de-b08d-4ade-b116-4b521433dfdd
             transform: ""
       - appliedColumnTests: {}
